@@ -123,4 +123,12 @@ body{
 
 /* Desktop Styles */
 
-@media screen and (min-width: 1025px){}
+@media (min-width: 1025px){
+    .container{
+        width: 500px;
+        min-width: 0px;
+        height: 350px;
+        padding: 35px;
+        border-radius: 20px;
+    }
+}
