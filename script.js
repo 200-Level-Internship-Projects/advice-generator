@@ -1,6 +1,6 @@
 let dice = document.querySelector(".dice");
 let quote = document.querySelector(".main");
-let id = document.querySelector(".id");
+let quoute_id = document.querySelector(".quote-id");
 
 dice.addEventListener("click", () => {
     const fetchNewAdvice = async () => {
@@ -9,7 +9,7 @@ dice.addEventListener("click", () => {
         const advice = data.slip.advice;
         const id = data.slip.id;
         quote.innerHTML = advice;
-        id.innerHTML = id;
+        quoute_id.innerHTML = id;
     }
     fetchNewAdvice();
 });
